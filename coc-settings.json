@@ -1,0 +1,30 @@
+{
+  "languageserver": {
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
+      "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
+      "initializationOptions": {
+          "cache": {
+            "directory": "/tmp/ccls"
+          },
+          "highlight": { "lsRanges" : true }
+        }
+    }
+   },
+    "suggest.maxCompleteItemCount": 10,
+    //"diagnostic.displayByAle": true,
+    "diagnostic.refreshOnInsertMode": true,
+    "prettier.tabWidth": 4,
+
+    // coc explorer
+    "explorer.width": 30,
+    "explorer.icon.enableNerdfont": true,
+    "explorer.previewAction.onHover": false,
+    "explorer.keyMappings.global": {
+      "<cr>": ["expandable?", ["expanded?", "collapse", "expand"], "open"],
+      "v": "open:vsplit",
+      "d": "delete"
+    }
+
+  }
